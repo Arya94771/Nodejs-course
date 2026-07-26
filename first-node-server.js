@@ -2,8 +2,9 @@ const http=require('http');
 
 const server=http.createServer((req,res)=>{
   //console.log(req);
-  console.log('hello')
-  res.end('hello world');
+  //console.log(req.url,req.method,req.headers);
+   res.end('hello world');
+  process.exit();
 })
 
 const port=3001;
